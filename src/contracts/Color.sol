@@ -16,6 +16,7 @@ contract Color is ERC721Full {
     /* E.G. color = "#FFFFFF" */
     function mint(string memory _color) public {
         // Require unique color
+        require(!_colorExists[_color]);
         // Color - add the color
         uint _id = colors.push(_color);
         // Its becoming a new unique token here
