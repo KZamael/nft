@@ -58,8 +58,13 @@ class App extends Component {
           <div className="row">
             <main role="main" className="col-lg-12 d-flex text-center">
               <div className="content mr-auto ml-auto">
+                { /* FORM GOES HERE */ }
               </div>
             </main>
+          </div>
+          <hr/>
+          <div className="row text-center">
+            <p>Tokens go here...</p>
           </div>
         </div>
       </div>
