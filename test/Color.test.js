@@ -65,7 +65,7 @@ contract('Color', (accounts) => {
             let color;
             let result = [];
 
-            for(var i = 1; i < totalSupply; i++) {
+            for(var i = 1; i <= totalSupply; i++) {
                 color = await contract.colors(i - 1);
                 result.push(color);
             }
@@ -73,7 +73,8 @@ contract('Color', (accounts) => {
             let expected = [
             '#EC058E',
             '#5386E4',
-            '#FFFFFF'
+            '#FFFFFF',
+            '#000000'
             ];
 
             assert.equal(result.join(','), expected.join(','));
